@@ -1,0 +1,616 @@
+.jeg_pl_lg_1 .jeg_review_stars, .jeg_pl_lg_4 .jeg_review_stars, 
+.jeg_pl_lg_6 .jeg_review_stars, .jeg_pl_lg_card .jeg_review_stars,
+.jeg_pl_lg_box .jeg_review_stars {
+	font-size: 16px;
+}
+
+ [class*=jeg_] .fa.fa-star-half-o {
+    font-family: FontAwesome;
+    font-weight: 600;
+}
+
+[class*=jeg_] .fa.fa-star-half-o:before {
+    content: "\F123";
+}
+
+.jeg_review_wrap {
+	border-top: 3px solid #eee;
+	padding-top: 20px;
+	margin: 40px 0;
+}
+
+.jeg_review_title {
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: -0.02em;
+	margin: 0 0 20px;
+	color: #f70d28;
+}
+
+.jeg_review_wrap .jeg_review_subtitle {
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 1.4em;
+	margin: 0 0 5px;
+}
+
+.jeg_review_wrap h3 {
+	font-size: 20px;
+	font-weight: bolder;
+	margin: 0 0 10px;
+	text-transform: uppercase;
+}
+
+.review_score {
+	float: left;
+	color: #fff;
+	text-align: center;
+	width: 100px;
+	margin-right: 15px;
+}
+
+.review_score .score_text {
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.score_good {
+	background: #0D86F7;
+}
+
+.score_avg {
+	background: #A20DF7;
+}
+
+.score_bad {
+	background: #F70D0D;
+}
+
+.score_value {
+	display: block;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: normal;
+	padding: 15px 0;
+}
+
+.score_value .percentsym {
+	font-size: 50%;
+	vertical-align: super;
+	margin-right: -0.45em;
+}
+
+.score_text {
+	display: block;
+	padding: 3px 0;
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	text-rendering: auto;
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;
+}
+
+.jeg_reviewheader {
+	margin-bottom: 20px;
+}
+
+.jeg_reviewheader .desc {
+	padding-left: 120px;
+}
+
+.jeg_reviewdetail {
+	margin-bottom: 30px;
+	background: #f5f5f5;
+	border-radius: 3px;
+	display: table;
+	width: 100%;
+}
+
+.conspros {
+	width: 50%;
+	padding: 20px 30px;
+	display: table-cell;
+}
+
+.jeg_reviewdetail .conspros:first-child {
+	border-right: 1px solid #e0e0e0;
+}
+
+.jeg_reviewdetail ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.jeg_reviewdetail li {
+	padding-left: 30px;
+	position: relative;
+}
+
+.jeg_reviewdetail li > i {
+	color: #a0a0a0;
+	position: absolute;
+	left: 0;
+	top: -1px;
+}
+
+.jeg_reviewscore {
+	padding: 20px 30px;
+	border: 2px solid #eee;
+	border-radius: 3px;
+	margin-bottom: 30px;
+}
+
+.jeg_reviewscore ul {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+}
+
+.jeg_reviewscore li {
+	margin: 1em 0;
+	padding: 0;
+	font-size: 13px;
+	list-style: none !important;
+}
+
+.jeg_landing_review.jeg_review_stars {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+/** Review Stars **/
+.jeg_review_stars {
+	font-size: 14px;
+}
+
+.jeg_review_stars .fa {
+	color: #F7C90D;
+}
+
+.jeg_reviewstars li {
+	border-top: 1px dotted #eee;
+	padding-top: 8px;
+	margin: 8px 0;
+}
+
+.jeg_reviewstars .reviewscore {
+	float: right;
+	font-size: 18px;
+	color: #F7C90D;
+}
+
+/** Review Bars **/
+.jeg_reviewbars .reviewscore {
+	font-weight: bold;
+	float: right;
+}
+
+.jeg_reviewbars .jeg_reviewbar_wrap, .jeg_reviewbars .barbg {
+	height: 4px;
+	border-radius: 2px;
+}
+
+.jeg_reviewbars .jeg_reviewbar_wrap {
+	position: relative;
+	background: #eee;
+	clear: both;
+}
+
+.jeg_reviewbars .barbg {
+	position: relative;
+	display: block;
+	opacity: 0;
+	width: 0;
+	background: #F7C90D;
+	background: -moz-linear-gradient(left, rgba(247, 201, 13, 1) 0%, rgba(247, 201, 13, 1) 45%, rgba(247, 126, 13, 1) 100%);
+	background: -webkit-linear-gradient(left, rgba(247, 201, 13, 1) 0%, rgba(247, 201, 13, 1) 45%, rgba(247, 126, 13, 1) 100%);
+	background: linear-gradient(to right, rgba(247, 201, 13, 1) 0%, rgba(247, 201, 13, 1) 45%, rgba(247, 126, 13, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7c90d', endColorstr='#f77e0d', GradientType=1);
+	-webkit-transition: 0s ease;
+	-o-transition: 0s ease;
+	transition: 0s ease;
+}
+
+.jeg_reviewbars.show .barbg {
+	opacity: 1;
+}
+
+.jeg_reviewbars .barbg:after {
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: #fff;
+	content: '';
+	position: absolute;
+	right: 0;
+	display: block;
+	border: 3px solid #F77E0D;
+	top: -3px;
+}
+
+/** Product Deals **/
+.jeg_deals h3 {
+	text-transform: none;
+	font-size: 22px;
+	font-weight: bolder;
+	margin: 0 0 5px;
+}
+
+.dealstitle {
+	float: left;
+}
+
+.bestprice {
+	float: right;
+	width: 200px;
+	text-align: right;
+}
+
+.bestprice h4 {
+	margin: 0 0 5px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.bestprice .price {
+	font-size: 34px;
+	color: #f70d28;
+}
+
+.jeg_deals .price {
+	font-weight: bold;
+}
+
+.jeg_deals a {
+	color: #212121
+}
+
+.content-inner .jeg_deals_float {
+	display: block;
+	float: right;
+	width: 35%;
+	padding: 15px;
+	background: #f5f5f5;
+	border-radius: 3px;
+	margin: 0 0 20px 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.with-share .content-inner .jeg_deals_float {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.with-share .content-inner .jeg_deals_float {
+		width: 40%;
+	}
+}
+
+.jeg_deals_float h3 {
+	font-size: 1em;
+	margin: 5px 0 10px;
+}
+
+.jeg_deals_float .dealstitle {
+	float: none;
+}
+
+.content-inner ul.jeg_storelist {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	border: 1px solid #e0e0e0;
+	font-family: inherit;
+}
+
+.jeg_storelist li {
+	background: #fff;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 5px 10px;
+	margin: 0;
+	font-size: 13px;
+	display: flex;
+    justify-content: space-between;
+}
+
+.jeg_storelist li:last-child {
+	border-bottom: 0
+}
+
+.jeg_storelist a.storename {
+    width: 60%;
+}
+
+.jeg_storelist .productlink {
+	display: inline-block;
+	padding: 0 10px;
+	background: #F70D28;
+	color: #fff;
+	border-radius: 2px;
+	font-size: 11px;
+	line-height: 20px;
+	margin-left: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/** review widget **/
+
+.jeg_review_widget .jeg_reviewscore {
+	padding: 0;
+	border: 0;
+}
+
+.jeg_review_widget .jeg_review_procons .conspros {
+	width: auto;
+	display: block;
+}
+
+.jeg_review_widget {
+	padding: 20px;
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.jeg_review_widget .average_review_score {
+	margin: -20px -20px 30px -20px;
+	padding: 20px;
+}
+
+.jeg_review_widget .average_review_score .average_score,
+.jeg_review_widget .average_review_score .score_value {
+	color: #fff;
+}
+
+.jeg_review_widget .average_review_score h3 {
+	margin: 0;
+}
+
+.jeg_review_widget .average_review_score .average_score {
+	float: left;
+}
+
+.jeg_review_widget .average_review_score .score_value {
+	float: right;
+	padding: 0;
+	font-size: 24px;
+}
+
+.jeg_review_widget .average_review_score:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.jeg_review_widget .conspros {
+	padding: 0;
+}
+
+.jeg_review_widget .conspros li {
+	margin-bottom: 7px;
+}
+
+.jeg_review_widget .conspros i {
+	margin-right: 8px;
+	font-size: 10px;
+}
+
+.jeg_review_widget .conspros h3 {
+	font-size: 18px;
+}
+
+.jeg_review_widget .jeg_deals {
+	margin: 30px -20px -20px;
+	padding: 30px 20px 30px;
+	border-top: 1px solid #e3e3e3;
+}
+
+.jeg_review_widget .jeg_deals .jeg_dealsheader h3 {
+	float: left;
+	font-weight: normal;
+	padding: 0;
+	line-height: 1em;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.jeg_review_widget .jeg_deals .jeg_dealsheader .price {
+	float: right;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.jeg_review_widget .jeg_deals .jeg_dealsheader {
+	margin-bottom: 20px;
+}
+
+.jeg_review_widget .jeg_storelist li {
+	padding: 12px 10px;
+}
+
+.jeg_review_widget .buy-now-deals {
+	display: block;
+	background: #43c801;
+	color: #fff;
+	clear: both;
+	border-radius: 3px;
+	padding: 7px;
+	text-align: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.jeg_review_widget .jeg_reviewbars .jeg_reviewbar_wrap {
+	margin-top: 7px;
+}
+
+.storename .store-icon {
+	margin-right: 7px;
+	display: inline-block;
+}
+
+/** review search **/
+
+.review-search-form {
+	padding: 20px;
+	background: #f7f7f7;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+
+.jeg_review_search_result_wrapper,
+.search-bar-wrapper {
+	position: relative;
+}
+
+.search-bar-wrapper {
+	margin-bottom: 20px;
+}
+
+.jeg_review_info {
+	width: 130px;
+	margin-left: 25px;
+	padding-right: 15px;
+	padding-left: 15px;
+	background: #f7f7f7;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.jeg_review_info .info-title {
+	color: #c0c0c0;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 0 0 5px;
+	font-weight: 600;
+}
+
+.jeg_review_info .price-info {
+	margin-bottom: 15px;
+}
+
+.jeg_review_info .price-info strong {
+	font-size: 24px;
+	line-height: 1.6em;
+}
+
+.jeg_review_info .price-info strong {
+	font-size: 20px;
+}
+
+.jeg_review_info .store-info li {
+	margin-top: 5px;
+}
+
+.jeg_review_info .store-info a {
+	font-size: 12px;
+	color: #212121;
+	letter-spacing: 0px;
+}
+
+.jeg_price_review_list::before {
+	content: "/";
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.jeg_price_review_list {
+	font-weight: bold;
+	color: #f70d28;
+}
+
+/* Review New Element */
+.jeg_review_search_result .jeg_post {
+	-js-display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: flex-start;
+	align-items: flex-start;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.jeg_review_search_result .jeg_post > div {
+	-webkit-box-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
+.jeg_review_search_result .jeg_post .jeg_postblock_content {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.jeg_review_search_result .jeg_pl_md_2 .jeg_thumb {
+	float: none;
+}
+
+@media only screen and (max-width: 412px) {
+	.jeg_storelist li {
+		flex-direction: column;
+	}
+	.jeg_storelist a.storename {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.jeg_review_search_result .jeg_post {
+		display: block;
+	}
+
+	.jeg_review_search_result .jeg_pl_md_2 .jeg_thumb {
+		float: left;
+		margin-bottom: 10px;
+	}
+
+	.jeg_review_info {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 10px;
+		clear: both;
+	}
+
+	.jeg_review_info .price-info {
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+
+	.jeg_review_info .store-info {
+		overflow: hidden;
+	}
+
+	.jeg_review_info .store-info li {
+		display: inline-block;
+		margin-right: 20px;
+	}
+}
+
+.jeg_review_search.alt .jeg_pagenav_1 a.page_nav:hover,
+.jeg_review_search.alt .jeg_pagenav_1 a.page_number:hover {
+	background: #999;
+}
+
+/* RTL Section */
+.rtl .jeg_reviewbars .reviewscore {
+	float: left;
+}
+
+.rtl .jeg_reviewbars .barbg {
+	background: -moz-linear-gradient(right, rgba(247, 201, 13, 1) 0%, rgba(247, 201, 13, 1) 45%, rgba(247, 126, 13, 1) 100%);
+	background: -webkit-linear-gradient(right, rgba(247, 201, 13, 1) 0%, rgba(247, 201, 13, 1) 45%, rgba(247, 126, 13, 1) 100%);
+	background: linear-gradient(to left, rgba(247, 201, 13, 1) 0%, rgba(247, 201, 13, 1) 45%, rgba(247, 126, 13, 1) 100%);
+}
