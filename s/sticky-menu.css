@@ -1,0 +1,62 @@
+.beeteam368-site-header .beeteam368-main-menu.sticky-menu {
+  width: auto;
+  z-index: -999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+}
+@media (max-width: 991px) {
+  .beeteam368-site-header.beeteam368-h-rose .beeteam368-main-menu.sticky-menu .beeteam368-social-account {
+    display: none;
+  }
+}
+
+.beeteam368-sticky-menu .beeteam368-site-header .beeteam368-main-menu.sticky-menu {
+  z-index: 19;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transition: transform 0.368s ease-in-out, opacity 0.368s ease-in-out, visibility 0.368s ease-in-out;
+  -webkit-transition: transform 0.368s ease-in-out, opacity 0.368s ease-in-out, visibility 0.368s ease-in-out;
+}
+.beeteam368-sticky-menu.admin-bar .beeteam368-site-header .beeteam368-main-menu.sticky-menu {
+  top: 32px;
+}
+@media (max-width: 782px) {
+  .beeteam368-sticky-menu.admin-bar .beeteam368-site-header .beeteam368-main-menu.sticky-menu {
+    top: 46px;
+  }
+}
+@media (max-width: 600px) {
+  .beeteam368-sticky-menu.admin-bar .beeteam368-site-header .beeteam368-main-menu.sticky-menu {
+    top: 0;
+  }
+}
+@media (min-width: 576px) {
+  .beeteam368-sticky-menu.side-menu-mode .beeteam368-site-header .beeteam368-main-menu.sticky-menu {
+    left: var(--width__side-menu-hide);
+  }
+}
+@media (min-width: 1366px) {
+  .beeteam368-sticky-menu.side-menu-mode.sidemenu-active .beeteam368-site-header .beeteam368-main-menu.sticky-menu {
+    left: var(--width__side-menu);
+  }
+}
+@media (min-width: 576px) {
+  .beeteam368-sticky-menu.side-menu-mode.sidemenu-right .beeteam368-site-header .beeteam368-main-menu.sticky-menu {
+    left: 0;
+    right: var(--width__side-menu-hide);
+  }
+}
+@media (min-width: 1366px) {
+  .beeteam368-sticky-menu.side-menu-mode.sidemenu-right.sidemenu-active .beeteam368-site-header .beeteam368-main-menu.sticky-menu {
+    left: 0;
+    right: var(--width__side-menu);
+  }
+}
