@@ -2,7 +2,7 @@
     "name": "BUDDY TV",
     "short_name": "BuddyTV",
     "description": "Stream your favorite channels with BUDDY TV",
-    "start_url": "/index.html",
+    "start_url": "https://sidimadrive.blogspot.com/p/btt.html",
     "display": "standalone",
     "background_color": "#f5f6f5",
     "theme_color": "#1e90ff",
@@ -18,4 +18,5 @@
             "type": "image/png"
         }
     ]
+
 }
